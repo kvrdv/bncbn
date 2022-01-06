@@ -354,7 +354,7 @@ body {
 
 .project-kvast {
   order: 5;
-  background: url('../images/project-kvast-2.svg') no-repeat, url('/src/images/project-kvast-1.svg') no-repeat,
+  background: url('../images/project-kvast-2.svg') no-repeat, url('../images/project-kvast-1.svg') no-repeat,
     #f5f5f5;
   background-size: 100% auto, auto 400px;
   background-position: center 65px, center 200px;
