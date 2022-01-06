@@ -2,17 +2,17 @@
 
 @font-face {
   font-family: Ubuntu;
-  src: url(../src/fonts/Ubuntu-Regular.ttf);
+  src: url(../fonts/Ubuntu-Regular.ttf);
 }
 
 @font-face {
   font-family: Irrationalist;
-  src: url(../src/fonts/Irrationalist-Regular.ttf);
+  src: url(../fonts/Irrationalist-Regular.ttf);
 }
 
 @font-face {
   font-family: Moralist;
-  src: url(../src/fonts/Moralist.ttf);
+  src: url(../fonts/Moralist.ttf);
 }
 
 p,
