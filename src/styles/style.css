@@ -1,18 +1,22 @@
+/* To do: */
+/* Переименовать шрифты */
+/* Пофиксить скругление углов у первых двух проектов */
+
 /* resets & common */
 
 @font-face {
-  font-family: grotesk;
-  src: url(../fonts/cy-grotesk-key-regular.otf);
+  font-family: grot;
+  src: url(../fonts/grot.otf);
 }
 
 @font-face {
-  font-family: irrationalist;
-  src: url(../fonts/irrationalist-regular.ttf);
+  font-family: irra;
+  src: url(../fonts/irra.ttf);
 }
 
 @font-face {
-  font-family: moralist;
-  src: url(../fonts/moralist.ttf);
+  font-family: mora;
+  src: url(../fonts/mora.ttf);
 }
 
 p,
@@ -51,7 +55,7 @@ html {
 
 body {
   max-width: 1416px;
-  font-family: 'grotesk', sans-serif;
+  font-family: 'grot', sans-serif;
   color: #212121;
   padding: 1rem;
   margin: 0 auto;
@@ -75,7 +79,7 @@ body {
 }
 
 .header-logo-shell .header-logo {
-  font-family: 'irrationalist', sans-serif;
+  font-family: 'irra', sans-serif;
   text-transform: uppercase;
   font-size: 6rem;
   color: #ffffff;
@@ -259,7 +263,7 @@ body {
 .section-header-accent-letters {
   position: absolute;
   text-transform: uppercase;
-  font-family: 'moralist', sans-serif;
+  font-family: 'mora', sans-serif;
   font-size: 8rem;
   user-select: none;
 }
@@ -337,7 +341,7 @@ body {
   background: url('../images/project-surface-1.png') no-repeat, url('../images/project-surface-2.png') no-repeat,
     #f5f5f5;
   background-size: auto 140%, auto 120%;
-  background-position: -15% 10%, 110% -10%;
+  background-position: -15% 10%, 110% 2%;
 }
 
 .project-surface:hover {
@@ -348,7 +352,7 @@ body {
   order: 2;
   background: url('../images/project-keksby.svg') no-repeat, #f5f5f5;
   background-size: auto 100%;
-  background-position: center top;
+  background-position: center top -7px;
 }
 
 .project-unqwertier {
@@ -526,7 +530,7 @@ body {
 }
 
 .footer-menu ul {
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 .footer-menu ul:last-child {
