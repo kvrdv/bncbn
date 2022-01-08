@@ -1,6 +1,5 @@
 /* To do: */
-/* Переименовать шрифты */
-/* Пофиксить скругление углов у первых двух проектов */
+/* Пофиксить баги сафари */
 
 /* resets & common */
 
@@ -265,6 +264,7 @@ body {
   text-transform: uppercase;
   font-family: 'mora', sans-serif;
   font-size: 8rem;
+  line-height: 13rem;
   user-select: none;
 }
 
