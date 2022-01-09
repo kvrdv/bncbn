@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KVRDV</title>
     <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/page-header.css" />
+    <link rel="stylesheet" href="./src/styles/section-header.css" />
+    <link rel="stylesheet" href="./src/styles/section-projects.css" />
+    <link rel="stylesheet" href="./src/styles/section-blog.css" />
+    <link rel="stylesheet" href="./src/styles/page-footer.css" />
   </head>
   <body>
-    <header class="header" id="anchor-footer-button-up">
+    <header class="page-header" id="anchor-footer-button-up">
       <div class="header-logo-shell">
         <a href="https://github.com/kvrdv" class="header-logo">KVRDV</a>
       </div>
@@ -36,17 +41,17 @@
         </div>
       </nav>
     </header>
-    <section class="section-projects">
-      <div class="section-header">
-        <div class="section-header-accent">
-          <div class="section-header-accent-figure section-header-accent-figure-1"></div>
-          <div class="section-header-accent-figure section-header-accent-figure-2"></div>
-          <div class="section-header-accent-figure section-header-accent-figure-3"></div>
-          <div class="section-header-accent-figure section-header-accent-figure-4"></div>
-          <span class="section-header-accent-letters">ХЕНДМЕЙД</span>
-        </div>
-        <div class="section-header-illustration"></div>
+    <div class="section-header">
+      <div class="section-header-accent">
+        <div class="section-header-accent-figure section-header-accent-figure-1"></div>
+        <div class="section-header-accent-figure section-header-accent-figure-2"></div>
+        <div class="section-header-accent-figure section-header-accent-figure-3"></div>
+        <div class="section-header-accent-figure section-header-accent-figure-4"></div>
+        <span class="section-header-accent-letters">БЛОГ</span>
       </div>
+      <div class="section-header-illustration"></div>
+    </div>
+    <section class="section-projects hidden">
       <div class="projects">
         <div class="project project-surface">
           <div class="project-nav">
@@ -152,7 +157,8 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <section class="section-blog"></section>
+    <footer class="page-footer">
       <a href="#anchor-footer-button-up" class="footer-button-up">Наверх</a>
       <nav class="footer-menu">
         <ul>
