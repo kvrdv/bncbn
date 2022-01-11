@@ -5,52 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KVRDV</title>
-    <link rel="stylesheet" href="./src/styles/style.css" />
-    <link rel="stylesheet" href="./src/styles/page-header.css" />
-    <link rel="stylesheet" href="./src/styles/section-header.css" />
-    <link rel="stylesheet" href="./src/styles/section-projects.css" />
-    <link rel="stylesheet" href="./src/styles/section-blog.css" />
-    <link rel="stylesheet" href="./src/styles/page-footer.css" />
+    <link rel="stylesheet" href="./src/styles/common.css" />
+    <link rel="stylesheet" href="./src/styles/header.css" />
   </head>
   <body>
-    <header class="page-header" id="anchor-footer-button-up">
-      <div class="header-logo-shell">
-        <a href="https://github.com/kvrdv" class="header-logo">KVRDV</a>
+    <header class="header">
+      <div class="header__logo-shell">
+        <a href="#" class="header__logo header__logo_purple">KVRDV</a>
       </div>
-      <nav class="header-menu-shell">
-        <div class="header-buttons-left">
-          <a href="#" class="header-button header-button-language"></a>
-          <a href="#" class="header-button header-button-theme"></a>
+      <nav class="header__menu-shell">
+        <div class="header__buttons-left">
+          <a href="#" class="header__button header__button-language"></a>
+          <a href="#" class="header__button header__button-theme"></a>
         </div>
-        <ul class="header-menu">
-          <li class="header-menu-item">
+        <ul class="header__menu">
+          <li class="header__menu-item header__menu-home header__menu-home_purple">
             <a href="#">Титульный</a>
           </li>
-          <li class="header-menu-item">
+          <li class="header__menu-item header__menu-projects">
             <a href="#">Проекты</a>
           </li>
-          <li class="header-menu-item">
+          <li class="header__menu-item header__menu-blog">
             <a href="#">Дневник</a>
           </li>
-          <li class="header-menu-item">
+          <li class="header__menu-item header__menu-contact">
             <a href="#">Переговорная</a>
           </li>
         </ul>
-        <div class="header-buttons-right">
-          <a href="mailto:s.kovardaev@gmail.com" class="header-button header-button-contact"></a>
+        <div class="header__buttons-right">
+          <a href="#" class="header__button header__button-contact"></a>
         </div>
       </nav>
-    </header>
-    <div class="section-header">
-      <div class="section-header-accent">
-        <div class="section-header-accent-figure section-header-accent-figure-1"></div>
-        <div class="section-header-accent-figure section-header-accent-figure-2"></div>
-        <div class="section-header-accent-figure section-header-accent-figure-3"></div>
-        <div class="section-header-accent-figure section-header-accent-figure-4"></div>
-        <span class="section-header-accent-letters">БЛОГ</span>
+      <div class="header__tagline">
+        <div class="header__tagline-accent">
+          <div
+            class="header__tagline-accent-figure header__tagline-accent-figure-1 header__tagline-accent-figure_purple"
+          ></div>
+          <div
+            class="header__tagline-accent-figure header__tagline-accent-figure-2 header__tagline-accent-figure_blue"
+          ></div>
+          <div
+            class="header__tagline-accent-figure header__tagline-accent-figure-3 header__tagline-accent-figure_green"
+          ></div>
+          <div
+            class="header__tagline-accent-figure header__tagline-accent-figure-4 header__tagline-accent-figure_orange"
+          ></div>
+          <span class="header__tagline-accent-text header__tagline-accent-text_purple">ХАЙ</span>
+        </div>
+        <div class="header__tagline-img header__tagline-img_purple"></div>
       </div>
-      <div class="section-header-illustration"></div>
-    </div>
+    </header>
+
     <section class="section-projects hidden">
       <div class="projects">
         <div class="project project-surface">
@@ -157,8 +162,8 @@
         </div>
       </div>
     </section>
-    <section class="section-blog"></section>
-    <footer class="page-footer">
+
+    <footer class="page-footer hidden">
       <a href="#anchor-footer-button-up" class="footer-button-up">Наверх</a>
       <nav class="footer-menu">
         <ul>
@@ -196,5 +201,6 @@
         <span>Не все права защищены © 2021-2022</span>
       </div>
     </footer>
+    <script src="./src/js/app.js"></script>
   </body>
 </html>

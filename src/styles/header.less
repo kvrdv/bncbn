@@ -1,0 +1,227 @@
+@import './common.less';
+
+.header__logo-shell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17rem;
+  height: 6rem;
+  margin: 0 auto;
+  background-color: @black;
+
+  .header__logo {
+    font-family: 'irra', sans-serif;
+    text-transform: uppercase;
+    font-size: 6rem;
+    line-height: 6rem;
+    color: @white;
+    transition: 0.5s;
+    user-select: none;
+  }
+
+  &:hover .header__logo_purple {
+    color: @purple;
+  }
+  &:hover .header__logo_blue {
+    color: @blue;
+  }
+  &:hover .header__logo_green {
+    color: @green;
+  }
+  &:hover .header__logo_orange {
+    color: @orange;
+  }
+
+  &:visited .header__logo {
+    color: @white;
+  }
+}
+
+.header__menu-shell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 6rem;
+}
+
+.header__button {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 8px;
+  transition: 0.1s;
+  &:hover {
+    background-color: @gray;
+  }
+
+  &-language {
+    background: url(../images/header-button-language.svg) no-repeat center center;
+    margin-right: 8px;
+    &:active {
+      margin-right: 8px;
+    }
+  }
+
+  &-theme {
+    background: url(../images/header-button-theme.svg) no-repeat center center;
+  }
+
+  &-contact {
+    background: url(../images/header-button-contact.svg) no-repeat center center;
+  }
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: row;
+
+  &-item {
+    display: inline-block;
+    font-size: 22px;
+    margin-right: 8px;
+    border-radius: 8px;
+    padding: 4px 10px 8px 10px;
+    transition: 0.1s;
+    &:hover {
+      background-color: @gray;
+    }
+  }
+
+  &-home_purple a {
+    color: @purple;
+  }
+
+  &-projects_blue a {
+    color: @blue;
+  }
+
+  &-blog_green a {
+    color: @green;
+  }
+
+  &-contact {
+    margin-right: 0;
+    &_orange a {
+      color: @orange;
+    }
+  }
+}
+
+.header__tagline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 34rem;
+  column-gap: 1rem;
+  margin-bottom: 1rem;
+
+  &-accent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 8px;
+    background: @gray-linear;
+
+    &-figure {
+      width: 32rem;
+      height: 32rem;
+      position: absolute;
+      background-image: url(../images/accent-figure-blue.svg);
+      background-size: 0 0;
+      background-repeat: no-repeat;
+      background-position: center center;
+      &_purple {
+        background-image: url(../images/accent-figure-purple.svg);
+      }
+      &_blue {
+        background-image: url(../images/accent-figure-blue.svg);
+      }
+      &_green {
+        background-image: url(../images/accent-figure-green.svg);
+      }
+      &_orange {
+        background-image: url(../images/accent-figure-orange.svg);
+      }
+
+      @keyframes rotate-forward {
+        from {
+          transform: rotate(15deg);
+        }
+        to {
+          transform: rotate(375deg);
+        }
+      }
+
+      @keyframes rotate-back {
+        from {
+          transform: rotate(375deg);
+        }
+        to {
+          transform: rotate(15deg);
+        }
+      }
+
+      &-1 {
+        background-size: 32rem 32rem;
+        transform: rotate(30deg);
+        animation: rotate-forward 10s linear infinite;
+      }
+      &-2 {
+        opacity: 0.8;
+        background-size: 28rem 28rem;
+        transform: rotate(-30deg);
+        animation: rotate-back 8s linear infinite;
+      }
+      &-3 {
+        opacity: 0.6;
+        background-size: 24rem 24rem;
+        transform: rotate(60deg);
+        animation: rotate-forward 6s linear infinite;
+      }
+      &-4 {
+        opacity: 0.4;
+        background-size: 20rem 20rem;
+        transform: rotate(-60deg);
+        animation: rotate-back 4s linear infinite;
+      }
+    }
+
+    &-text {
+      position: absolute;
+      text-transform: uppercase;
+      font-size: 8rem;
+      line-height: 13rem;
+      user-select: none;
+      &_purple {
+        font-family: 'grot', sans-serif;
+      }
+      &_blue {
+        font-family: 'mora', sans-serif;
+      }
+      &_green {
+        font-family: 'cube', sans-serif;
+      }
+      &_orange{
+        font-family: 'grot', sans-serif;
+      }
+    }
+  }
+
+  &-img {
+    border-radius: 8px;
+    &_purple {
+      background: url(../images/accent-img-purple.svg) no-repeat center center, @gray-linear;
+    }
+    &_blue {
+      background: url(../images/accent-img-blue.svg) no-repeat center center, @gray-linear;
+    }
+    &_green {
+      background: url(../images/accent-img-green.svg) no-repeat center center, @gray-linear;
+    }
+    &_orange {
+      background: url(../images/accent-img-orange.svg) no-repeat center center, @gray-linear;
+    }
+  }
+}

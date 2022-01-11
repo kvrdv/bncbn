@@ -1,25 +1,19 @@
-/* resets & common */
-
-@font-face {
-  font-family: grot;
-  src: url(../fonts/grot.otf);
-}
-
 @font-face {
   font-family: irra;
   src: url(../fonts/irra.ttf);
 }
-
+@font-face {
+  font-family: grot;
+  src: url(../fonts/grot.otf);
+}
 @font-face {
   font-family: mora;
   src: url(../fonts/mora.ttf);
 }
-
 @font-face {
   font-family: cube;
   src: url(../fonts/cube.ttf);
 }
-
 p,
 h1,
 h2,
@@ -27,33 +21,22 @@ h3,
 h4,
 h5,
 h6,
-span {
-  padding: 0;
-  margin: 0;
-}
-
+span,
 a,
 a:visited,
-a:active {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  color: #212121;
-}
-
+a:active,
 ul,
 li {
-  list-style-type: none;
-  text-decoration: none;
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: #212121;
 }
-
 html {
-  scroll-behavior: smooth;
   font-size: 12px;
+  scroll-behavior: smooth;
 }
-
 body {
   max-width: 1416px;
   font-family: 'grot', sans-serif;
@@ -61,7 +44,6 @@ body {
   padding: 1rem;
   margin: 0 auto;
 }
-
 .hidden {
   display: none !important;
   visibility: hidden !important;
