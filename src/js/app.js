@@ -14,9 +14,13 @@ const accentFigure4 = document.querySelector('.header__tagline-accent-figure-4')
 const accentText = document.querySelector('.header__tagline-accent-text');
 // accent img
 const accentImg = document.querySelector('.header__tagline-img');
+// footer button up
+const footerButtonUp = document.querySelector('.footer__button-up');
+// section projects
+const sectionProjects = document.querySelector('.projects');
 
 // PURPLE PAGE
-homeButton.addEventListener('click', (event) => {
+homeButton.addEventListener('click', (purpleEvent) => {
   // logo color
   headerLogo.className = 'header__logo header__logo_purple';
   // menu color
@@ -28,20 +32,24 @@ homeButton.addEventListener('click', (event) => {
   accentFigure1.className =
     'header__tagline-accent-figure header__tagline-accent-figure-1 header__tagline-accent-figure_purple';
   accentFigure2.className =
-    'header__tagline-accent-figure header__tagline-accent-figure-2 header__tagline-accent-figure_blue';
+    'header__tagline-accent-figure header__tagline-accent-figure-2 header__tagline-accent-figure_purple';
   accentFigure3.className =
-    'header__tagline-accent-figure header__tagline-accent-figure-3 header__tagline-accent-figure_green';
+    'header__tagline-accent-figure header__tagline-accent-figure-3 header__tagline-accent-figure_purple';
   accentFigure4.className =
-    'header__tagline-accent-figure header__tagline-accent-figure-4 header__tagline-accent-figure_orange';
+    'header__tagline-accent-figure header__tagline-accent-figure-4 header__tagline-accent-figure_purple';
   // accent text
   accentText.innerText = 'ХАЙ';
-  accentText.className ='header__tagline-accent-text header__tagline-accent-text_purple';
+  accentText.className = 'header__tagline-accent-text header__tagline-accent-text_purple';
   // accent img
   accentImg.className = 'header__tagline-img header__tagline-img_purple';
+  // footer button up
+  footerButtonUp.className = 'footer__button-up footer__button-up_purple';
+  // section projects
+  sectionProjects.className = 'projects hidden';
 });
 
 // BLUE PAGE
-projectsButton.addEventListener('click', (event) => {
+projectsButton.addEventListener('click', (blueEvent) => {
   // logo color
   headerLogo.className = 'header__logo header__logo_blue';
   // menu color
@@ -60,13 +68,17 @@ projectsButton.addEventListener('click', (event) => {
     'header__tagline-accent-figure header__tagline-accent-figure-4 header__tagline-accent-figure_blue';
   // accent text
   accentText.innerText = 'ХЕНДМЕЙД';
-  accentText.className ='header__tagline-accent-text header__tagline-accent-text_blue';
+  accentText.className = 'header__tagline-accent-text header__tagline-accent-text_blue';
   // accent img
   accentImg.className = 'header__tagline-img header__tagline-img_blue';
+  // footer button up
+  footerButtonUp.className = 'footer__button-up footer__button-up_blue';
+  // section projects
+  sectionProjects.className = 'projects';
 });
 
 // GREEN PAGE
-blogButton.addEventListener('click', (event) => {
+blogButton.addEventListener('click', (greenEvent) => {
   // logo color
   headerLogo.className = 'header__logo header__logo_green';
   // menu color
@@ -85,13 +97,17 @@ blogButton.addEventListener('click', (event) => {
     'header__tagline-accent-figure header__tagline-accent-figure-4 header__tagline-accent-figure_green';
   // accent text
   accentText.innerText = 'НОЧНИК';
-  accentText.className ='header__tagline-accent-text header__tagline-accent-text_green';
+  accentText.className = 'header__tagline-accent-text header__tagline-accent-text_green';
   // accent img
   accentImg.className = 'header__tagline-img header__tagline-img_green';
+  // footer button up
+  footerButtonUp.className = 'footer__button-up footer__button-up_green';
+  // section projects
+  sectionProjects.className = 'projects hidden';
 });
 
 // ORANGE PAGE
-contactButton.addEventListener('click', (event) => {
+contactButton.addEventListener('click', (orangeEvent) => {
   // logo color
   headerLogo.className = 'header__logo header__logo_orange';
   // menu color
@@ -110,7 +126,11 @@ contactButton.addEventListener('click', (event) => {
     'header__tagline-accent-figure header__tagline-accent-figure-4 header__tagline-accent-figure_orange';
   // accent text
   accentText.innerText = 'НОУ БАРТЕР';
-  accentText.className ='header__tagline-accent-text header__tagline-accent-text_orange';
+  accentText.className = 'header__tagline-accent-text header__tagline-accent-text_orange';
   // accent img
   accentImg.className = 'header__tagline-img header__tagline-img_orange';
+  // footer button up
+  footerButtonUp.className = 'footer__button-up footer__button-up_orange';
+  // section projects
+  sectionProjects.className = 'projects hidden';
 });
