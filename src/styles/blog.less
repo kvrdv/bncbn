@@ -1,0 +1,168 @@
+// out: ./styles.css, compress: false
+@import './projects.less';
+
+.blog {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 408px 408px 408px;
+  gap: 1rem;
+
+  &__post {
+    display: flex;
+    background-color: @gray;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.5s;
+    &:hover .blog__post-nav-button {
+      opacity: 1;
+    }
+
+    &-nav {
+      width: 100%;
+      align-self: flex-end;
+      padding: 4rem 0 2rem 2rem;
+      background: @project-nav-linear;
+
+      &-name {
+        width: 32rem;
+        font-size: 30px;
+      }
+
+      &-button {
+        transition: 0.5s;
+        opacity: 0;
+        margin-bottom: 1rem;
+
+        & a {
+          display: inline-block;
+          height: 4rem;
+          font-size: 22px;
+          line-height: 44px;
+          text-align: center;
+          background-color: @green;
+          border-radius: 999px;
+          color: #ffffff;
+          padding: 0 14px;
+          margin-right: 1rem;
+          transition: 0.2s;
+          &:hover {
+            box-shadow: 0px 0px 1rem @green;
+          }
+        }
+      }
+    }
+  }
+
+  &__vscode {
+    order: 4;
+    grid-column: 2/4;
+    background: @gray;
+    position: relative;
+
+    &-dots {
+      position: absolute;
+      background-image: url('../images/blog/post-vscode.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 110%;
+      height: 110%;
+      transition: all 0.1s ease;
+    }
+
+    & .blog__post-nav {
+      position: relative;
+      z-index: 2;
+
+      & a {
+        position: relative;
+        z-index: 2;
+        background-color: @black;
+        &:hover {
+          box-shadow: 0px 0px 1rem @black;
+        }
+      }
+    }
+  }
+
+  &__git {
+    order: 2;
+    background: url('../images/blog/post-git.png') no-repeat, @gray;
+    background-size: 100% auto;
+    background-position: center top 12px;
+  }
+
+  &__markdown {
+    order: 3;
+    background: url('../images/blog/post-markdown.svg') no-repeat, @gray;
+    background-size: 100% auto;
+    background-position: center top 12px;
+  }
+
+  &__webpack {
+    order: 1;
+    grid-row: 1/3;
+    background: url('../images/blog/post-webpack-1.png') no-repeat, @gray;
+    background-size: auto 100%;
+    background-position: center top;
+    &:hover {
+      background: url('../images/blog/post-webpack-2.png') no-repeat, @gray;
+      background-size: auto 100%;
+      background-position: center top;
+    }
+  }
+
+  &__emmet {
+    order: 5;
+    grid-column: 1/3;
+    background: url('../images/blog/post-emmet.jpg') no-repeat;
+    background-size: 100% auto;
+    background-position: left top -120px;
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0);
+    }
+
+    & .blog__post-nav {
+      background: none;
+
+      &-name {
+        color: @white;
+      }
+    }
+  }
+
+  &__new {
+    order: 6;
+    background-color: @green;
+    &:hover .blog__new-dots {
+      text-shadow: 5px 5px 0px rgba(255, 255, 255, 0.7);
+    }
+
+    &-dots {
+      color: @white;
+      font-size: 468px;
+      font-style: italic;
+      transition: 0.5s;
+      user-select: none;
+    }
+
+    .blog__post-nav {
+      background: none;
+      &-button a {
+        position: relative;
+        z-index: 1;
+        background-color: @white;
+        color: @green;
+        &:hover {
+          box-shadow: 0px 0px 12px @white;
+        }
+      }
+      &-name {
+        position: relative;
+        z-index: 1;
+        color: @white;
+      }
+    }
+  }
+}

@@ -120,7 +120,7 @@
   &__ripley {
     order: 7;
     grid-column: 2/4;
-    background: url('../images/projects/ripley.png') no-repeat, @gray;
+    background: url('../images/projects/ripley.png') no-repeat;
     background-size: auto 100%;
     background-position: center top;
     filter: grayscale(100%);
@@ -139,7 +139,7 @@
 
   &__candyshop {
     order: 8;
-    background: url('../images/projects/candyshop-2.png') no-repeat, url('../images/projects/candyshop-1.png') no-repeat,
+    background: url('../images/projects/candyshop-2.png') no-repeat, url('../images/projects/candyshop-1.jpg') no-repeat,
       @gray;
     background-size: 110% auto, auto 120%;
     background-position: center -100%, center top;
@@ -151,7 +151,7 @@
       &-buttons a {
         background-color: @pink;
         color: @white;
-        &hover {
+        &:hover {
           box-shadow: 0px 0px 1rem @pink;
         }
       }

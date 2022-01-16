@@ -16,8 +16,9 @@ const accentText = document.querySelector('.header__tagline-accent-text');
 const accentImg = document.querySelector('.header__tagline-img');
 // footer button up
 const footerButtonUp = document.querySelector('.footer__button-up');
-// section projects
+// sections
 const sectionProjects = document.querySelector('.projects');
+const sectionBlog = document.querySelector('.blog');
 
 // PURPLE PAGE
 homeButton.addEventListener('click', (purpleEvent) => {
@@ -38,14 +39,15 @@ homeButton.addEventListener('click', (purpleEvent) => {
   accentFigure4.className =
     'header__tagline-accent-figure header__tagline-accent-figure-4 header__tagline-accent-figure_purple';
   // accent text
-  accentText.innerText = 'ХАЙ';
+  accentText.innerText = 'ПРИВЕТ';
   accentText.className = 'header__tagline-accent-text header__tagline-accent-text_purple';
   // accent img
   accentImg.className = 'header__tagline-img header__tagline-img_purple';
   // footer button up
   footerButtonUp.className = 'footer__button-up footer__button-up_purple';
-  // section projects
+  // sections
   sectionProjects.className = 'projects hidden';
+  sectionBlog.className = 'blog hidden';
 });
 
 // BLUE PAGE
@@ -73,8 +75,9 @@ projectsButton.addEventListener('click', (blueEvent) => {
   accentImg.className = 'header__tagline-img header__tagline-img_blue';
   // footer button up
   footerButtonUp.className = 'footer__button-up footer__button-up_blue';
-  // section projects
+  // sections
   sectionProjects.className = 'projects';
+  sectionBlog.className = 'blog hidden';
 });
 
 // GREEN PAGE
@@ -102,8 +105,9 @@ blogButton.addEventListener('click', (greenEvent) => {
   accentImg.className = 'header__tagline-img header__tagline-img_green';
   // footer button up
   footerButtonUp.className = 'footer__button-up footer__button-up_green';
-  // section projects
+  // sections
   sectionProjects.className = 'projects hidden';
+  sectionBlog.className = 'blog';
 });
 
 // ORANGE PAGE
@@ -131,6 +135,7 @@ contactButton.addEventListener('click', (orangeEvent) => {
   accentImg.className = 'header__tagline-img header__tagline-img_orange';
   // footer button up
   footerButtonUp.className = 'footer__button-up footer__button-up_orange';
-  // section projects
+  // sections
   sectionProjects.className = 'projects hidden';
+  sectionBlog.className = 'blog hidden';
 });
