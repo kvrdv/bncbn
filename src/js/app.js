@@ -5,6 +5,9 @@ const homeButton = document.querySelector('.header__menu-home');
 const projectsButton = document.querySelector('.header__menu-projects');
 const blogButton = document.querySelector('.header__menu-blog');
 const contactButton = document.querySelector('.header__menu-contact');
+// header
+const headerTaglineHome = document.querySelector('.header__tagline-home');
+const headerTagline = document.querySelector('.header__tagline');
 // accent figure
 const accentFigure1 = document.querySelector('.header__tagline-accent-figure-1');
 const accentFigure2 = document.querySelector('.header__tagline-accent-figure-2');
@@ -19,8 +22,10 @@ const footerButtonUp = document.querySelector('.footer__button-up');
 // sections
 const sectionProjects = document.querySelector('.projects');
 const sectionBlog = document.querySelector('.blog');
+const sectionContact = document.querySelector('.contact');
+const sectionHome = document.querySelector('.home');
 
-// PURPLE PAGE
+// PURPLE PAGE =========================================
 homeButton.addEventListener('click', (purpleEvent) => {
   // logo color
   headerLogo.className = 'header__logo header__logo_purple';
@@ -29,6 +34,9 @@ homeButton.addEventListener('click', (purpleEvent) => {
   projectsButton.className = 'header__menu-item header__menu-projects';
   blogButton.className = 'header__menu-item header__menu-blog';
   contactButton.className = 'header__menu-item header__menu-contact';
+  // header
+  headerTaglineHome.className = 'header__tagline-home';
+  headerTagline.className = 'header__tagline hidden';
   // accent figure
   accentFigure1.className =
     'header__tagline-accent-figure header__tagline-accent-figure-1 header__tagline-accent-figure_purple';
@@ -48,9 +56,11 @@ homeButton.addEventListener('click', (purpleEvent) => {
   // sections
   sectionProjects.className = 'projects hidden';
   sectionBlog.className = 'blog hidden';
+  sectionContact.className = 'contact hidden';
+  sectionHome.className = 'home';
 });
 
-// BLUE PAGE
+// BLUE PAGE =========================================
 projectsButton.addEventListener('click', (blueEvent) => {
   // logo color
   headerLogo.className = 'header__logo header__logo_blue';
@@ -59,6 +69,9 @@ projectsButton.addEventListener('click', (blueEvent) => {
   projectsButton.className = 'header__menu-item header__menu-projects header__menu-projects_blue';
   blogButton.className = 'header__menu-item header__menu-blog';
   contactButton.className = 'header__menu-item header__menu-contact';
+  // header
+  headerTaglineHome.className = 'header__tagline-home hidden';
+  headerTagline.className = 'header__tagline';
   // accent figure
   accentFigure1.className =
     'header__tagline-accent-figure header__tagline-accent-figure-1 header__tagline-accent-figure_blue';
@@ -78,9 +91,11 @@ projectsButton.addEventListener('click', (blueEvent) => {
   // sections
   sectionProjects.className = 'projects';
   sectionBlog.className = 'blog hidden';
+  sectionContact.className = 'contact hidden';
+  sectionHome.className = 'home hidden';
 });
 
-// GREEN PAGE
+// GREEN PAGE =========================================
 blogButton.addEventListener('click', (greenEvent) => {
   // logo color
   headerLogo.className = 'header__logo header__logo_green';
@@ -89,6 +104,9 @@ blogButton.addEventListener('click', (greenEvent) => {
   projectsButton.className = 'header__menu-item header__menu-projects';
   blogButton.className = 'header__menu-item header__menu-blog header__menu-blog_green';
   contactButton.className = 'header__menu-item header__menu-contact';
+  // header
+  headerTaglineHome.className = 'header__tagline-home hidden';
+  headerTagline.className = 'header__tagline';
   // accent figure
   accentFigure1.className =
     'header__tagline-accent-figure header__tagline-accent-figure-1 header__tagline-accent-figure_green';
@@ -108,9 +126,11 @@ blogButton.addEventListener('click', (greenEvent) => {
   // sections
   sectionProjects.className = 'projects hidden';
   sectionBlog.className = 'blog';
+  sectionContact.className = 'contact hidden';
+  sectionHome.className = 'home hidden';
 });
 
-// ORANGE PAGE
+// ORANGE PAGE =========================================
 contactButton.addEventListener('click', (orangeEvent) => {
   // logo color
   headerLogo.className = 'header__logo header__logo_orange';
@@ -119,6 +139,9 @@ contactButton.addEventListener('click', (orangeEvent) => {
   projectsButton.className = 'header__menu-item header__menu-projects';
   blogButton.className = 'header__menu-item header__menu-blog';
   contactButton.className = 'header__menu-item header__menu-contact header__menu-contact_orange';
+  // header
+  headerTaglineHome.className = 'header__tagline-home hidden';
+  headerTagline.className = 'header__tagline';
   // accent figure
   accentFigure1.className =
     'header__tagline-accent-figure header__tagline-accent-figure-1 header__tagline-accent-figure_orange';
@@ -138,4 +161,6 @@ contactButton.addEventListener('click', (orangeEvent) => {
   // sections
   sectionProjects.className = 'projects hidden';
   sectionBlog.className = 'blog hidden';
+  sectionContact.className = 'contact';
+  sectionHome.className = 'home hidden';
 });

@@ -1,5 +1,5 @@
 // vscode parallax
-let bg = document.querySelector('.blog__vscode-dots');
+let bg = document.querySelector('.blog__vscode-gears');
 
 window.addEventListener('mousemove', function (e) {
   let x = e.clientX / window.innerWidth;

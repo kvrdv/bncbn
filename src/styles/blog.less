@@ -41,7 +41,7 @@
           text-align: center;
           background-color: @green;
           border-radius: 999px;
-          color: #ffffff;
+          color: @white;
           padding: 0 14px;
           margin-right: 1rem;
           transition: 0.2s;
@@ -59,29 +59,19 @@
     background: @gray;
     position: relative;
 
-    &-dots {
+    &-gears {
       position: absolute;
-      background-image: url('../images/blog/post-vscode.svg');
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 110%;
-      height: 110%;
+      background: url('../images/blog/post-vscode.svg') no-repeat;
+      background-position: center;
+      background-size: 130% auto;
+      width: 130%;
+      height: 130%;
       transition: all 0.1s ease;
     }
 
     & .blog__post-nav {
       position: relative;
       z-index: 2;
-
-      & a {
-        position: relative;
-        z-index: 2;
-        background-color: @black;
-        &:hover {
-          box-shadow: 0px 0px 1rem @black;
-        }
-      }
     }
   }
 
@@ -89,26 +79,37 @@
     order: 2;
     background: url('../images/blog/post-git.png') no-repeat, @gray;
     background-size: 100% auto;
-    background-position: center top 12px;
+    background-position: left 12px top 12px;
   }
 
   &__markdown {
     order: 3;
-    background: url('../images/blog/post-markdown.svg') no-repeat, @gray;
-    background-size: 100% auto;
-    background-position: center top 12px;
+    background: url('../images/blog/post-markdown.png') no-repeat, @gray;
+    background-size: 70% auto;
+    background-position: center center;
   }
 
   &__webpack {
     order: 1;
     grid-row: 1/3;
-    background: url('../images/blog/post-webpack-1.png') no-repeat, @gray;
+    background: url('../images/blog/post-webpack-1.png') no-repeat,
+      linear-gradient(180deg, @gray 50%, @green 100%);
     background-size: auto 100%;
     background-position: center top;
     &:hover {
-      background: url('../images/blog/post-webpack-2.png') no-repeat, @gray;
+      background: url('../images/blog/post-webpack-2.png') no-repeat,
+        linear-gradient(180deg, @gray 50%, @green 100%);
       background-size: auto 100%;
       background-position: center top;
+    }
+    & .blog__post-nav {
+      &-button a {
+        background-color: @purple;
+        &:hover {
+          box-shadow: 0px 0px 1rem @purple;
+        }
+      }
+      background: none;
     }
   }
 
@@ -121,6 +122,14 @@
     filter: grayscale(100%);
     &:hover {
       filter: grayscale(0);
+    }
+
+    & .blog__post-nav-button a {
+      color: @white;
+      background-color: @green;
+      &:hover {
+        box-shadow: 0px 0px 1rem @green;
+      }
     }
 
     & .blog__post-nav {

@@ -35,7 +35,7 @@
           <a href="#" class="header__button header__button-contact"></a>
         </div>
       </nav>
-      <div class="header__tagline">
+      <div class="header__tagline hidden">
         <div class="header__tagline-accent">
           <div
             class="header__tagline-accent-figure header__tagline-accent-figure-1 header__tagline-accent-figure_purple"
@@ -53,7 +53,79 @@
         </div>
         <div class="header__tagline-img header__tagline-img_purple"></div>
       </div>
+      <div class="header__tagline-home">
+        <p class="header__tagline-home-text">Проектирование и разработка с любовью к своему делу</p>
+      </div>
     </header>
+    <section class="home">
+      <div class="home__skills">
+        <div class="home__skill home__skill-design">
+          <p class="home__skill-name">
+            UX/UI <br />
+            дизайн
+          </p>
+          <div class="home__skill-tags">
+            <span class="home__skill-tag">Figma</span>
+            <span class="home__skill-tag">Affinity</span>
+            <span class="home__skill-tag">Adobe</span>
+          </div>
+          <p class="home__skill-text">
+            Обычно работаю с готовыми макетами и не занимаюсь дизайном самостоятельно. Когда нужно протестировать
+            элемент интерфейса или создать прототип, использую Figma - основной инструмент для дизайна. С PSD макетами
+            работаю в Affinity или использую продукты Adobe.
+          </p>
+          <div class="home__skill-image"></div>
+        </div>
+        <div class="home__skill home__skill-dev">
+          <p class="home__skill-name">
+            Веб <br />
+            разработка
+          </p>
+          <div class="home__skill-tags">
+            <span class="home__skill-tag">HTML</span>
+            <span class="home__skill-tag">CSS</span>
+            <span class="home__skill-tag">JavaScript</span>
+          </div>
+          <p class="home__skill-text">
+            В стек технологий входит: HTML, препроцессоры CSS (БЭМ), JavaScript, Node.js, cборщики пакетов Parcel и
+            Webpack, CI-сервисы Travis и AppVeyor, система контроля версий GitHub. Применяю компонетный подход, пишу
+            симантически корреткный, валидный и адаптивный код.
+          </p>
+          <div class="home__skill-image"></div>
+        </div>
+        <div class="home__skill home__skill-pm">
+          <p class="home__skill-name">
+            Проектное <br />
+            управление
+          </p>
+          <div class="home__skill-tags">
+            <span class="home__skill-tag">Notion</span>
+            <span class="home__skill-tag">Telegram</span>
+            <span class="home__skill-tag">Zoom</span>
+          </div>
+          <p class="home__skill-text">
+            Руководил проектами по внедрению систем SSO, распознавания лиц, контроля доступа и видеонаблюдения,
+            интеграции продуктов Oracle и IBM. Работал с Project, Trello, Slack. Основной инструмент для контроля задач
+            - Notion, для коммуникации использую Telegram и Zoom.
+          </p>
+          <div class="home__skill-image"></div>
+        </div>
+      </div>
+      <div class="home__links">
+        <a href="#" class="home__link home__link-projects">
+          посмотреть <br />
+          проекты</a
+        >
+        <a href="#" class="home__link home__link-blog">
+          почитать <br />
+          блог</a
+        >
+        <a href="#" class="home__link home__link-contacts">
+          записать <br />
+          контакты</a
+        >
+      </div>
+    </section>
     <section class="projects hidden">
       <div class="projects__project projects__surface">
         <div class="projects__project-nav">
@@ -160,7 +232,7 @@
     </section>
     <section class="blog hidden">
       <div class="blog__post blog__vscode">
-        <div class="blog__vscode-dots"></div>
+        <div class="blog__vscode-gears"></div>
         <div class="blog__post-nav">
           <div class="blog__post-nav-button">
             <a href="#">Читать</a>
@@ -181,11 +253,10 @@
           <div class="blog__post-nav-button">
             <a href="#">Читать</a>
           </div>
-          <p class="blog__post-nav-name">Красивый Readme  c Markdown</p>
+          <p class="blog__post-nav-name">Красивый Readme c Markdown</p>
         </div>
       </div>
       <div class="blog__post blog__webpack">
-        
         <div class="blog__post-nav">
           <div class="blog__post-nav-button">
             <a href="#">Читать</a>
@@ -208,6 +279,47 @@
             <a href="#">Переговорная</a>
           </div>
           <p class="blog__post-nav-name">Предложить идею для нового текста</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact hidden">
+      <div class="contact__card contact__zoom">
+        <div class="contact__zoom-circle"></div>
+        <div class="contact__zoom-camera"></div>
+        <div class="contact__card-nav">
+          <div class="contact__card-nav-buttons">
+            <a href="#">Zoom</a>
+            <a href="#">Skype</a>
+          </div>
+          <p class="contact__card-nav-name">
+            Если мы договорились о видеозвонке, значит у вас есть пароль к комнате, здесь можно в нее зайти
+          </p>
+        </div>
+      </div>
+      <div class="contact__card contact__mail">
+        <div class="contact__card-nav">
+          <div class="contact__card-nav-buttons">
+            <a href="#">Почта</a>
+            <a href="#">Телеграм</a>
+          </div>
+          <p class="contact__card-nav-name">В настоящий момент открыт к предложениям о постоянной и проектной работе</p>
+        </div>
+      </div>
+      <div class="contact__card contact__resume">
+        <div class="contact__card-nav">
+          <div class="contact__card-nav-buttons">
+            <a href="#">Хедхантер</a>
+            <a href="#">Хабр</a>
+          </div>
+          <p class="contact__card-nav-name">Резюме на сайтах рекрутинга</p>
+        </div>
+      </div>
+      <div class="contact__card contact__github">
+        <div class="contact__card-nav">
+          <div class="contact__card-nav-buttons">
+            <a href="#">GitHub</a>
+          </div>
+          <p class="contact__card-nav-name">Репозитории проектов на GitHub</p>
         </div>
       </div>
     </section>
