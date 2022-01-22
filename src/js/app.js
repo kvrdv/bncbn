@@ -1,32 +1,43 @@
-// logo color
+// logo
 const headerLogo = document.querySelector('.header__logo');
-// menu color
+// header menu
 const homeButton = document.querySelector('.header__menu-home');
 const projectsButton = document.querySelector('.header__menu-projects');
 const blogButton = document.querySelector('.header__menu-blog');
 const contactButton = document.querySelector('.header__menu-contact');
-// header
+// header tagline
 const headerTaglineHome = document.querySelector('.header__tagline-home');
 const headerTagline = document.querySelector('.header__tagline');
-// accent figure
+// header accent figure
 const accentFigure1 = document.querySelector('.header__tagline-accent-figure-1');
 const accentFigure2 = document.querySelector('.header__tagline-accent-figure-2');
 const accentFigure3 = document.querySelector('.header__tagline-accent-figure-3');
 const accentFigure4 = document.querySelector('.header__tagline-accent-figure-4');
-// accent text
+// header accent text
 const accentText = document.querySelector('.header__tagline-accent-text');
-// accent img
+// header accent img
 const accentImg = document.querySelector('.header__tagline-img');
-// footer button up
-const footerButtonUp = document.querySelector('.footer__button-up');
+// section home links
+const linkProjects = document.querySelector('.home__link-projects');
+const linkBlog = document.querySelector('.home__link-blog');
+const linkContact = document.querySelector('.home__link-contact');
 // sections
 const sectionProjects = document.querySelector('.projects');
 const sectionBlog = document.querySelector('.blog');
 const sectionContact = document.querySelector('.contact');
 const sectionHome = document.querySelector('.home');
+// button to contact page
+const buttonsToContact = document.querySelectorAll('.button-to-contact');
+// footer button up
+const footerButtonUp = document.querySelector('.footer__button-up');
+// footer menu
+const footerHome = document.querySelector('.footer__menu-home');
+const footerProjects = document.querySelector('.footer__menu-projects');
+const footerBlog = document.querySelector('.footer__menu-blog');
+const footerContact = document.querySelector('.footer__menu-contact');
 
-// PURPLE PAGE =========================================
-homeButton.addEventListener('click', (purpleEvent) => {
+// class changers
+showHome = function () {
   // logo color
   headerLogo.className = 'header__logo header__logo_purple';
   // menu color
@@ -58,10 +69,9 @@ homeButton.addEventListener('click', (purpleEvent) => {
   sectionBlog.className = 'blog hidden';
   sectionContact.className = 'contact hidden';
   sectionHome.className = 'home';
-});
+};
 
-// BLUE PAGE =========================================
-projectsButton.addEventListener('click', (blueEvent) => {
+showProjects = function () {
   // logo color
   headerLogo.className = 'header__logo header__logo_blue';
   // menu color
@@ -93,10 +103,9 @@ projectsButton.addEventListener('click', (blueEvent) => {
   sectionBlog.className = 'blog hidden';
   sectionContact.className = 'contact hidden';
   sectionHome.className = 'home hidden';
-});
+};
 
-// GREEN PAGE =========================================
-blogButton.addEventListener('click', (greenEvent) => {
+showBlog = function () {
   // logo color
   headerLogo.className = 'header__logo header__logo_green';
   // menu color
@@ -128,10 +137,9 @@ blogButton.addEventListener('click', (greenEvent) => {
   sectionBlog.className = 'blog';
   sectionContact.className = 'contact hidden';
   sectionHome.className = 'home hidden';
-});
+};
 
-// ORANGE PAGE =========================================
-contactButton.addEventListener('click', (orangeEvent) => {
+showContact = function () {
   // logo color
   headerLogo.className = 'header__logo header__logo_orange';
   // menu color
@@ -163,4 +171,57 @@ contactButton.addEventListener('click', (orangeEvent) => {
   sectionBlog.className = 'blog hidden';
   sectionContact.className = 'contact';
   sectionHome.className = 'home hidden';
+};
+
+// header menu buttons
+homeButton.addEventListener('click', (event) => {
+  showHome();
+});
+
+projectsButton.addEventListener('click', (event) => {
+  showProjects();
+});
+
+blogButton.addEventListener('click', (event) => {
+  showBlog();
+});
+
+contactButton.addEventListener('click', (event) => {
+  showContact();
+});
+
+// home section links
+linkProjects.addEventListener('click', (event) => {
+  showProjects();
+});
+
+linkBlog.addEventListener('click', (event) => {
+  showBlog();
+});
+
+linkContact.addEventListener('click', (event) => {
+  showContact();
+});
+
+// footer menu buttons
+footerHome.addEventListener('click', (event) => {
+  showHome();
+});
+
+footerProjects.addEventListener('click', (event) => {
+  showProjects();
+});
+
+footerBlog.addEventListener('click', (event) => {
+  showBlog();
+});
+
+footerContact.addEventListener('click', (event) => {
+  showContact();
+});
+
+buttonsToContact.forEach((element) => {
+  element.addEventListener('click', (event) => {
+    showContact();
+  });
 });

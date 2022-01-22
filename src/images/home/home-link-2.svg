@@ -1,13 +1,1 @@
-<svg width="289" height="204" viewBox="0 0 289 204" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M127.711 -19.7851L202.271 -6.76334C220.601 -3.56194 235.824 9.19037 242.188 26.6763L267.846 97.1709C274.211 114.657 270.746 134.211 258.762 148.446L210.016 206.347C198.09 220.513 179.531 227.268 161.29 224.082L86.7301 211.06C68.3994 207.859 53.1766 195.107 46.8123 177.621L21.1544 107.126C14.79 89.6402 18.2543 70.0863 30.2386 55.8512L78.9847 -2.05023C90.9104 -16.2159 109.47 -22.9708 127.711 -19.7851Z" fill="url(#paint0_radial_469_21)" stroke="url(#paint1_radial_469_21)" stroke-width="36" stroke-linecap="round"/>
-<defs>
-<radialGradient id="paint0_radial_469_21" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(144.5 102.148) rotate(70) scale(156 156.589)">
-<stop offset="0.713542" stop-color="#00C853" stop-opacity="0"/>
-<stop offset="1" stop-color="#AA00FF"/>
-</radialGradient>
-<radialGradient id="paint1_radial_469_21" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(144.5 102.148) rotate(70) scale(156 156.589)">
-<stop stop-color="#00C853"/>
-<stop offset="1" stop-color="#00C853" stop-opacity="0"/>
-</radialGradient>
-</defs>
-</svg>
+<svg fill="none" height="204" viewBox="0 0 289 204" width="289" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><radialGradient id="a" cx="0" cy="0" gradientTransform="matrix(53.35514236 146.59204884 -147.1455278 53.55659222 144.5 102.148)" gradientUnits="userSpaceOnUse" r="1"><stop offset=".713542" stop-color="#00c853" stop-opacity="0"/><stop offset="1" stop-color="#a0f"/></radialGradient><radialGradient id="b" cx="0" cy="0" gradientTransform="matrix(53.35514236 146.59204884 -147.1455278 53.55659222 144.5 102.148)" gradientUnits="userSpaceOnUse" r="1"><stop offset="0" stop-color="#00c853"/><stop offset="1" stop-color="#00c853" stop-opacity="0"/></radialGradient><path d="m127.711-19.7851 74.56 13.02176c18.33 3.2014 33.553 15.95371 39.917 33.43964l25.658 70.4946c6.365 17.4861 2.9 37.0401-9.084 51.2751l-48.746 57.901c-11.926 14.166-30.485 20.921-48.726 17.735l-74.5599-13.022c-18.3307-3.201-33.5535-15.953-39.9178-33.439l-25.6579-70.495c-6.3644-17.4858-2.9001-37.0397 9.0842-51.2748l48.7461-57.90143c11.9257-14.16567 30.4853-20.92057 48.7263-17.73487z" fill="url(#a)" stroke="url(#b)" stroke-linecap="round" stroke-width="36"/></svg>

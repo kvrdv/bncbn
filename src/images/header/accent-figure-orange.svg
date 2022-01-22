@@ -1,9 +1,1 @@
-<svg width="312" height="312" viewBox="0 0 312 312" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M99.7083 33.5001C124.727 -9.83323 187.273 -9.83334 212.292 33.5L290.234 168.5C315.252 211.833 283.979 266 233.942 266H78.0578C28.0208 266 -3.25246 211.833 21.7661 168.5L99.7083 33.5001Z" fill="url(#paint0_radial_352_5)"/>
-<defs>
-<radialGradient id="paint0_radial_352_5" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(156 156) rotate(90) scale(220)">
-<stop offset="0.510417" stop-color="#FF6D00" stop-opacity="0"/>
-<stop offset="1" stop-color="#FF6D00"/>
-</radialGradient>
-</defs>
-</svg>
+<svg fill="none" height="312" viewBox="0 0 312 312" width="312" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><radialGradient id="a" cx="0" cy="0" gradientTransform="matrix(0 220 -220 0 156 156)" gradientUnits="userSpaceOnUse" r="1"><stop offset=".510417" stop-color="#ff6d00" stop-opacity="0"/><stop offset="1" stop-color="#ff6d00"/></radialGradient><path d="m99.7083 33.5001c25.0187-43.33333 87.5647-43.33344 112.5837-.0001l77.942 135c25.018 43.333-6.255 97.5-56.292 97.5h-155.8842c-50.037 0-81.31026-54.167-56.2917-97.5z" fill="url(#a)"/></svg>

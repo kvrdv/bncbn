@@ -7,17 +7,66 @@
 }
 
 .header__tagline-home {
+  position: relative;
   display: flex;
   align-content: center;
   height: 51rem;
   border-radius: 8px;
   margin-bottom: 1rem;
   overflow: hidden;
-  background: url(../images/home/home-header-2.svg) no-repeat, url(../images/home/home-header-1.svg) no-repeat,
-    url(../images/home/home-header-3.svg) no-repeat, @white-gray-linear;
-  background-position: center bottom, left top, right top;
+  background: url(../images/home/home-header-man.svg) no-repeat, @white-gray-linear;
+  background-position: center bottom;
+
+  .header__home-img-left-1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../images/home/home-img-left-1.svg) no-repeat;
+    background-position: left top;
+  }
+
+  .header__home-img-left-2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../images/home/home-img-left-2.svg) no-repeat;
+    background-position: left top;
+  }
+
+  .header__home-img-left-3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../images/home/home-img-left-3.svg) no-repeat;
+    background-position: left top;
+  }
+
+  .header__home-img-right-1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../images/home/home-img-right-1.svg) no-repeat;
+    background-position: right top;
+  }
+
+  .header__home-img-right-2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../images/home/home-img-right-2.svg) no-repeat;
+    background-position: right top;
+  }
+
+  .header__home-img-right-3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../images/home/home-img-right-3.svg) no-repeat;
+    background-position: right top;
+  }
 
   &-text {
+    z-index: 10;
     font-family: 'prim', sans-serif;
     font-size: 4rem;
     line-height: 4rem;
@@ -113,20 +162,33 @@
       text-transform: uppercase;
       font-size: 3rem;
       line-height: 3rem;
+      transition: 0.5s;
 
       &-projects {
         background: url(../images/home/home-link-1.svg) no-repeat, @gray;
         background-position: center center;
+        background-size: 75%;
+        &:hover {
+          background-size: 80%;
+        }
       }
 
       &-blog {
         background: url(../images/home/home-link-2.svg) no-repeat, @gray;
         background-position: center center;
+        background-size: 75%;
+        &:hover {
+          background-size: 80%;
+        }
       }
 
-      &-contacts {
+      &-contact {
         background: url(../images/home/home-link-3.svg) no-repeat, @gray;
         background-position: center center;
+        background-size: 95%;
+        &:hover {
+          background-size: 100%;
+        }
       }
     }
   }

@@ -55,7 +55,7 @@
 
   &__vscode {
     order: 4;
-    grid-column: 2/4;
+    grid-column: 1/3;
     background: @gray;
     position: relative;
 
@@ -76,32 +76,27 @@
   }
 
   &__git {
-    order: 2;
+    order: 1;
     background: url('../images/blog/post-git.png') no-repeat, @gray;
     background-size: 100% auto;
     background-position: left 12px top 12px;
   }
 
   &__markdown {
-    order: 3;
+    order: 2;
     background: url('../images/blog/post-markdown.png') no-repeat, @gray;
     background-size: 70% auto;
     background-position: center center;
   }
 
   &__webpack {
-    order: 1;
+    order: 3;
+    grid-column: 3;
     grid-row: 1/3;
-    background: url('../images/blog/post-webpack-1.png') no-repeat,
-      linear-gradient(180deg, @gray 50%, @green 100%);
+    background: url('../images/blog/post-webpack-2.png') no-repeat, linear-gradient(180deg, @gray 50%, @green 100%);
     background-size: auto 100%;
     background-position: center top;
-    &:hover {
-      background: url('../images/blog/post-webpack-2.png') no-repeat,
-        linear-gradient(180deg, @gray 50%, @green 100%);
-      background-size: auto 100%;
-      background-position: center top;
-    }
+    transition: 0.5s;
     & .blog__post-nav {
       &-button a {
         background-color: @purple;
