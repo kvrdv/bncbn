@@ -46,7 +46,7 @@
           margin-right: 1rem;
           transition: 0.2s;
           &:hover {
-            box-shadow: 0px 0px 1rem @green;
+            box-shadow: 0px 0px 1.5rem @green;
           }
         }
       }
@@ -93,7 +93,7 @@
     order: 3;
     grid-column: 3;
     grid-row: 1/3;
-    background: url('../images/blog/post-webpack-2.png') no-repeat, linear-gradient(180deg, @gray 50%, @green 100%);
+    background: url('../images/blog/post-webpack-2.png') no-repeat, @gray;
     background-size: auto 100%;
     background-position: center top;
     transition: 0.5s;
@@ -101,10 +101,10 @@
       &-button a {
         background-color: @purple;
         &:hover {
-          box-shadow: 0px 0px 1rem @purple;
+          box-shadow: 0px 0px 1.5rem @purple;
         }
       }
-      background: none;
+      // background: none;
     }
   }
 
@@ -120,10 +120,10 @@
     }
 
     & .blog__post-nav-button a {
-      color: @white;
-      background-color: @green;
+      color: @black;
+      background-color: @white;
       &:hover {
-        box-shadow: 0px 0px 1rem @green;
+        box-shadow: 0px 0px 1.5rem @white;
       }
     }
 
@@ -138,15 +138,18 @@
 
   &__new {
     order: 6;
-    background-color: @green;
+    position: relative;
+    background-color: @gray;
     &:hover .blog__new-dots {
-      text-shadow: 5px 5px 0px rgba(255, 255, 255, 0.7);
+      text-shadow: 5px 5px 0px rgba(0, 200, 83, 0.5);
     }
 
     &-dots {
-      color: @white;
-      font-size: 468px;
-      font-style: italic;
+      color: @green;
+      position: absolute;
+      top: -100px;
+      left: 125px;
+      font-size: 288px;
       transition: 0.5s;
       user-select: none;
     }
@@ -156,16 +159,16 @@
       &-button a {
         position: relative;
         z-index: 1;
-        background-color: @white;
-        color: @green;
+        background-color: @green;
+        color: @white;
         &:hover {
-          box-shadow: 0px 0px 12px @white;
+          box-shadow: 0px 0px 1.5rem @green;
         }
       }
       &-name {
         position: relative;
         z-index: 1;
-        color: @white;
+        color: @green;
       }
     }
   }

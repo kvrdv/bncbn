@@ -12,7 +12,7 @@
   align-content: center;
   height: 51rem;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
   overflow: hidden;
   background: url(../images/home/home-header-man.svg) no-repeat, @white-gray-linear;
   background-position: center bottom;
@@ -67,11 +67,12 @@
 
   &-text {
     z-index: 10;
+    color: @white;
     font-family: 'prim', sans-serif;
     font-size: 4rem;
     line-height: 4rem;
     width: 50rem;
-    margin: auto 0 auto 4rem;
+    margin: 6rem 0 auto 6rem;
   }
 }
 
@@ -86,13 +87,28 @@
       border-radius: 8px;
       padding: 2rem;
 
+      &-image {
+        height: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        transition: 0.5s;
+      }
+
       &-name {
-        font-size: 3rem;
-        line-height: 3rem;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: bold;
+      }
+
+      &-text {
+        font-size: 2rem;
+        text-align: justify;
       }
 
       &-tags {
-        margin: 2rem 0;
+        margin-top: 3rem;
         & .home__skill-tag {
           display: inline-block;
           height: 4rem;
@@ -103,25 +119,14 @@
           border-radius: 999px;
           color: @white;
           padding: 0 14px;
-          margin-right: 1rem;
+          margin-right: 6px;
+          margin-bottom: 1rem;
           transition: 0.5s;
+
+          &:hover {
+            box-shadow: 0px 0px 1.5rem @purple;
+          }
         }
-      }
-
-      &-text {
-        font-size: 2rem;
-        text-align: justify;
-      }
-
-      &-image {
-        height: 4rem;
-        margin-top: 2rem;
-        transition: 0.5s;
-      }
-
-      &:hover .home__skill-tag {
-        background-color: @black;
-        color: @purple;
       }
 
       &:hover .home__skill-image {
@@ -131,16 +136,19 @@
       &-design .home__skill-image {
         background: url(../images/home/home-design.svg) no-repeat;
         background-position: center;
+        background-size: 3rem;
       }
 
       &-dev .home__skill-image {
         background: url(../images/home/home-dev.svg) no-repeat;
         background-position: center;
+        background-size: 3rem;
       }
 
       &-pm .home__skill-image {
         background: url(../images/home/home-pm.svg) no-repeat;
         background-position: center;
+        background-size: 3rem;
       }
     }
   }
@@ -149,7 +157,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 4rem;
+    background: @gray;
+    border-radius: 8px;
 
     .home__link {
       display: flex;
@@ -157,15 +167,16 @@
       align-items: center;
       height: 17rem;
       background-color: @gray;
-      border-radius: 8px;
+
       font-family: 'prim', sans-serif;
       text-transform: uppercase;
+      text-align: center;
       font-size: 3rem;
       line-height: 3rem;
       transition: 0.5s;
 
       &-projects {
-        background: url(../images/home/home-link-1.svg) no-repeat, @gray;
+        background: url(../images/home/home-link-2.svg) no-repeat;
         background-position: center center;
         background-size: 75%;
         &:hover {
@@ -174,7 +185,7 @@
       }
 
       &-blog {
-        background: url(../images/home/home-link-2.svg) no-repeat, @gray;
+        background: url(../images/home/home-link-1.svg) no-repeat;
         background-position: center center;
         background-size: 75%;
         &:hover {
@@ -183,7 +194,7 @@
       }
 
       &-contact {
-        background: url(../images/home/home-link-3.svg) no-repeat, @gray;
+        background: url(../images/home/home-link-3.svg) no-repeat;
         background-position: center center;
         background-size: 95%;
         &:hover {

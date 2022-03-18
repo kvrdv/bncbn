@@ -69,9 +69,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     height: 6rem;
+    position: relative;
+    margin-bottom: 4rem;
 
     .header__button {
       display: inline-block;
@@ -79,31 +81,16 @@
       height: 4rem;
       border-radius: 8px;
       transition: 0.1s;
+
       &:hover {
         background-color: @gray;
       }
 
-      &-language {
-        // background: url(../images/header/button-language.svg) no-repeat center center;
-        margin-right: 8px;
-        &:active {
-          margin-right: 8px;
-        }
-        &:hover {
-          background-color: white;
-          cursor: inherit;
-        }
-      }
-
-      &-theme {
-        // background: url(../images/header/button-theme.svg) no-repeat center center;
-        &:hover {
-          background-color: white;
-          cursor: inherit;
-        }
-      }
-
       &-contact {
+        position: absolute;
+        z-index: 1;
+        right: 1rem;
+        top: 1rem;
         background: url(../images/header/button-contact.svg) no-repeat center center;
       }
     }
@@ -114,7 +101,7 @@
 
       &-item {
         display: inline-block;
-        font-size: 22px;
+        font-size: 2rem;
         margin-right: 8px;
         border-radius: 8px;
         padding: 4px 10px 8px 10px;
@@ -150,7 +137,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 34rem;
     column-gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
 
     &-accent {
       display: flex;
@@ -238,7 +225,7 @@
         }
         &_green {
           font-family: 'cube', sans-serif;
-          font-size: 7rem;
+          font-size: 6rem;
         }
         &_orange {
           font-family: 'geck', sans-serif;

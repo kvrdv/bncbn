@@ -26,10 +26,6 @@ const sectionProjects = document.querySelector('.projects');
 const sectionBlog = document.querySelector('.blog');
 const sectionContact = document.querySelector('.contact');
 const sectionHome = document.querySelector('.home');
-// button to contact page
-const buttonsToContact = document.querySelectorAll('.button-to-contact');
-// footer button up
-const footerButtonUp = document.querySelector('.footer__button-up');
 // footer menu
 const footerHome = document.querySelector('.footer__menu-home');
 const footerProjects = document.querySelector('.footer__menu-projects');
@@ -57,13 +53,8 @@ showHome = function () {
     'header__tagline-accent-figure header__tagline-accent-figure-3 header__tagline-accent-figure_purple';
   accentFigure4.className =
     'header__tagline-accent-figure header__tagline-accent-figure-4 header__tagline-accent-figure_purple';
-  // accent text
-  accentText.innerText = 'ПРИВЕТ';
-  accentText.className = 'header__tagline-accent-text header__tagline-accent-text_purple';
   // accent img
   accentImg.className = 'header__tagline-img header__tagline-img_purple';
-  // footer button up
-  footerButtonUp.className = 'footer__button-up footer__button-up_purple';
   // sections
   sectionProjects.className = 'projects hidden';
   sectionBlog.className = 'blog hidden';
@@ -92,12 +83,10 @@ showProjects = function () {
   accentFigure4.className =
     'header__tagline-accent-figure header__tagline-accent-figure-4 header__tagline-accent-figure_blue';
   // accent text
-  accentText.innerText = 'ХЕНДМЕЙД';
+  accentText.innerText = 'GALLERY';
   accentText.className = 'header__tagline-accent-text header__tagline-accent-text_blue';
   // accent img
   accentImg.className = 'header__tagline-img header__tagline-img_blue';
-  // footer button up
-  footerButtonUp.className = 'footer__button-up footer__button-up_blue';
   // sections
   sectionProjects.className = 'projects';
   sectionBlog.className = 'blog hidden';
@@ -126,12 +115,10 @@ showBlog = function () {
   accentFigure4.className =
     'header__tagline-accent-figure header__tagline-accent-figure-4 header__tagline-accent-figure_green';
   // accent text
-  accentText.innerText = 'НОЧНИК';
+  accentText.innerText = 'JOURNAL';
   accentText.className = 'header__tagline-accent-text header__tagline-accent-text_green';
   // accent img
   accentImg.className = 'header__tagline-img header__tagline-img_green';
-  // footer button up
-  footerButtonUp.className = 'footer__button-up footer__button-up_green';
   // sections
   sectionProjects.className = 'projects hidden';
   sectionBlog.className = 'blog';
@@ -160,12 +147,10 @@ showContact = function () {
   accentFigure4.className =
     'header__tagline-accent-figure header__tagline-accent-figure-4 header__tagline-accent-figure_orange';
   // accent text
-  accentText.innerText = 'НОУ БАРТЕР';
+  accentText.innerText = 'CONTACT';
   accentText.className = 'header__tagline-accent-text header__tagline-accent-text_orange';
   // accent img
   accentImg.className = 'header__tagline-img header__tagline-img_orange';
-  // footer button up
-  footerButtonUp.className = 'footer__button-up footer__button-up_orange';
   // sections
   sectionProjects.className = 'projects hidden';
   sectionBlog.className = 'blog hidden';
@@ -218,10 +203,4 @@ footerBlog.addEventListener('click', (event) => {
 
 footerContact.addEventListener('click', (event) => {
   showContact();
-});
-
-buttonsToContact.forEach((element) => {
-  element.addEventListener('click', (event) => {
-    showContact();
-  });
 });

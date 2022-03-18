@@ -1,6 +1,6 @@
 // out: ./styles.css, compress: true
 @import './contact.less';
-@gray-white-linear: linear-gradient(180deg, @gray 0%, @white 30%);
+@gray-white-linear: linear-gradient(180deg, @gray 0%, @white 100%);
 
 .footer {
   display: flex;
@@ -8,52 +8,15 @@
   align-items: center;
   position: relative;
   padding: 4rem 0 7rem 0;
-  margin-top: 1rem;
+  margin-top: 4rem;
   border-radius: 8px;
   background: @gray-white-linear;
-
-  &__button-up {
-    display: inline-block;
-    width: 10rem;
-    height: 4rem;
-    font-size: 22px;
-    line-height: 44px;
-    border-radius: 999px;
-    color: @white;
-    padding: 0 11px 0 16px;
-    margin-bottom: 4rem;
-    transition: 0.5s;
-    cursor: pointer;
-
-    .button-up-color(@upcolor) {
-      background: url('../images/footer/button-up.svg') no-repeat, url('../images/footer/button-up.svg') no-repeat,
-        @upcolor;
-      background-position: right 14px center, right 14px bottom -24px;
-      &:hover {
-        background-position: right 14px top -24px, right 14px center;
-        box-shadow: 0px 0px 1rem @upcolor;
-      }
-    }
-
-    &_purple {
-      .button-up-color(@purple);
-    }
-    &_blue {
-      .button-up-color(@blue);
-    }
-    &_green {
-      .button-up-color(@green);
-    }
-    &_orange {
-      .button-up-color(@orange);
-    }
-  }
 
   &__menu {
     display: flex;
 
     &-list {
-      margin-right: 3rem;
+      margin-right: 5rem;
 
       &:last-child {
         margin-right: 0;
@@ -73,6 +36,7 @@
       font-size: 18px;
       font-weight: bold;
       margin-left: 6px;
+      line-height: 26px;
     }
 
     &-item {
