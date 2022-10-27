@@ -1,8 +1,3 @@
-### Hi there 👋
+# BNCBN 
 
-<!--
-To do:
-0. Safari artifacts
-
-1
--->
+Design and development agency
